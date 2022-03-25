@@ -1,0 +1,19 @@
+--Вариант с яндексом 2022--
+
+1.https://github.com/PHPMailer/PHPMailer - для отправки формы используем плагин PHPMailer -> В разделе Releases жмём PHPMailer 6.6.0 -> Source code (zip). Создали папку phpmailer и в неё кинули файлы из папки PHPMailer 6.6.0. Файлы - Exception.php, PHPMailer.php и SMTP.php.  
+---
+2. Создала файл mail.php, она для отправке писем. 
+Подключаем // Файлы phpmailer
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
+
+
+
+--Мой вариант 2021--
+
+1.https://github.com/maxdenaro/maxgraph-youtube-source -> В папке JS-плагины №4. Валидация и отправка формы + отправка файла -> берём папку PHPMailer.  
+---
+2. Создала файл mail.php, она для отправке писем. 
+Подключаем // Файл PHPMailer
+require_once 'PHPMailer/PHPMailerAutoload.php';
