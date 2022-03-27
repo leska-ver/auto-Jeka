@@ -111,6 +111,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+  // Табы (gallery__bay Каталог-фото ремонт авто)
+  document.querySelectorAll('.js-tabs-btn').forEach(function(tabsBtn) {
+    tabsBtn.addEventListener('click', function(event) {
+
+      // event.preventDefault();//Отменяем клик ссылке
+
+      const path = event.currentTarget.dataset.path
+
+      document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+        tabContent.classList.remove('tab-content-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
+    })    
+  });
+
+
+
   // Плавный скролл по якорям. В любое место можно кинуть.
   $(function(){
     $('a[href^="#"]').click(function(){

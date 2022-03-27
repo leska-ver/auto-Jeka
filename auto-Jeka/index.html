@@ -55,7 +55,7 @@
               </div>
             </li>
           </ul>
-          <a class="header__top-link" href="#">
+          <a class="header__top-link btn" href="#">
             Make an Appointment
             <div class="header__top-block-svg">
               <svg width="43" height="40" viewbox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +203,7 @@
       <div class="header__bottom">
         <div class="container">
           <h2 class="header__bottom-title h2">Top notch service is our main auto motive</h2>
-          <a class="header__bottom-link" href="#">
+          <a class="header__bottom-link btn" href="#">
             Make an Appointment
             <div class="header__bottom-block-svg">
               <svg width="43" height="40" viewbox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -370,9 +370,9 @@
       </section>
       <section class="recording">
         <div class="container recording__container">
-          <div class="recording__white">
+          <div class="recording__left">
             <h3 class="recording__h3 h3">Make an appointment</h3>
-            <div class="recording__form margin--right">
+            <div class="recording__form">
               <form class="recording__form form" id="checkboxForm" action="mail.php" enctype="multipart/form-data" method="POST">
                 <input type="hidden" name="admin_email[]" value="darki@yandex.ru">
                 <input type="hidden" name="form_subject" value="Тема письма">
@@ -410,8 +410,59 @@
               </form>
             </div>
           </div>
+          <div class="recording__right">
+            <h3 class="recording__h3-white h3">Maxime placeat facere possimus omnis </h3>
+            <h2 class="recording__h2 h2">17k</h2>
+            <h4 class="recording__h4 h4">customers served (and counting)</h4>
+          </div>
         </div>
       </section>
+      <section class="gallery">
+        <div class="container gallery__container">
+          <div class="gallery__subtitle subtitle">
+            <img src="img/whoweare-icon.png" alt="icon">
+            GALLERY & LIVE STREAMS
+          </div>
+          <h3 class="gallery__title h3">Check out our hard workers</h3>
+          <div class="js-tabs">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <button class="gallery__button js-tabs-btn" data-path="gallery" aria-label="gallery">Gallery</button>
+              </li>
+              <li class="gallery__item">
+                <button class="gallery__button js-tabs-btn is-active" data-path="bay-1" aria-label="bay-1">Live stream: Bay 1</button>
+              </li>
+              <li class="gallery__item">
+                <button class="gallery__button js-tabs-btn" data-path="bay-2" aria-label="bay-2">Live stream: Bay 2</button>
+              </li>
+              <li class="gallery__item">
+                <button class="gallery__button js-tabs-btn" data-path="bay-3" aria-label="bay-3">Live stream: Bay 3</button>
+              </li>
+            </ul>
+            <div class="gallery__bay tab-content" data-target="gallery">
+              <div class="gallery__bay-grid">
+                <img class="gallery__bay-img" src="img/gallery-1.jpg" alt="Фото-1">
+                <img class="gallery__bay-img" src="img/gallery-2.jpg" alt="Фото-2">
+                <img class="gallery__bay-img" src="img/gallery-3.jpg" alt="Фото-3">
+                <img class="gallery__bay-img" src="img/gallery-4.jpg" alt="Фото-4">
+                <img class="gallery__bay-img" src="img/gallery-5.jpg" alt="Фото-5">
+                <img class="gallery__bay-img" src="img/gallery-6.jpg" alt="Фото-6">
+                <img class="gallery__bay-img" src="img/gallery-10.jpg" alt="Фото-10">
+              </div>
+            </div>
+            <div class="gallery__bay tab-content tab-content-active" data-target="bay-1">
+              <img src="img/gallery-7.jpg" alt="Фото-7">
+            </div>
+            <div class="gallery__bay tab-content" data-target="bay-2">
+              <img src="img/gallery-8.jpg" alt="Фото-8">
+            </div>
+            <div class="gallery__bay tab-content" data-target="bay-3">
+              <img src="img/gallery-9.jpg" alt="Фото-9">
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer class="footer">
       <div class="container footer__container">
