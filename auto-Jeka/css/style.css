@@ -1528,6 +1528,14 @@ button {
 }
 /* // Стили для модального окна - footer__modal */
 
+.modal__title {
+  margin-top: 0;
+}
+
+.footer__map {
+  width: 100%; 
+  height: 400px;
+}
 /*** // Подвал footer-1440px***/
 
 @media (max-width: 1024px) {
@@ -2230,8 +2238,8 @@ button {
     width: 400px;     
   }
 
-  .footer__map .ymaps-2-1-79-map, .footer__map .ymaps-2-1-79-map ymaps {
-    width: 360px;
+  .footer__map {
+    height: 260px;
   }
   /*** // Подвал footer-757px***/
 }  
@@ -2513,6 +2521,10 @@ button {
 
   .footer__bottom {
     padding-bottom: 30px;
+  }
+
+  .footer__modal {
+    width: 100%;     
   }
   /*** // Подвал footer-434px***/
 }
