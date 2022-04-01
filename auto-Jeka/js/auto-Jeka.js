@@ -181,13 +181,64 @@ const allTabBtns = document.querySelectorAll('.js-tabs-btn');
 
       this.classList.add('is-active');
     })  
-  })
+  });
+
+
+
+  //Скрываем часть услуг .gallery__bay-img//
+  const list = document.getElementById('list-js');
+  const moreButton = document.getElementById('list-button-js');
+  moreButton.addEventListener('click', function () {
+    list.classList.toggle('full');
+  });
+
+
+
+  // Яндекс карта
+  ymaps.ready(function () {
+    let myMap = new ymaps.Map('map', {//1 метка
+      center: [47.60957850699349,-122.3417605],
+      zoom: 16
+    }, {
+      searchControlProvider: 'yandex#search'
+  }),
+
+  // Создаём макет содержимого.
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myGeoObject = new ymaps.Placemark(myMap.getCenter(), {
+    hintContent: 'logoipsum',
+    balloonContent: 'Mon - Sat: 7:000 am - 6:00 pm'
+  }, {
+    // Опции.
+    // Необходимо указать данный тип макета.
+    iconLayout: 'default#image',
+    // Своё изображение иконки метки.
+    // iconImageHref: 'https://img2.freepng.ru/20180514/tpw/kisspng-middle-market-company-business-development-marketi-5af94049274d16.924943061526284361161.jpg',
+    iconImageHref: 'img/ymaps.svg',
+    // Размеры метки.
+    iconImageSize: [20, 20],
+    // Смещение левого верхнего угла иконки относительно
+    // её "ножки" (точки привязки).
+    iconImageOffset: [-5, -8],
+  // Смещение слоя с содержимым относительно слоя с картинкой.
+  iconContentOffset: [15, 15],
+  // Макет содержимого.
+  iconContentLayout: MyIconContentLayout
+});
+
+myMap.geoObjects
+.add(myGeoObject);
+});
+
 
 
   // Плавный скролл по якорям. В любое место можно кинуть.
   $(function(){
     $('a[href^="#"]').click(function(){
-      var target = $(this).attr('href');
+      let target = $(this).attr('href');
       $('html, body').animate({scrollTop: $
     (target).offset().top},800);
       return false;
