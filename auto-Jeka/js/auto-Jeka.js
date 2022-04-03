@@ -37,15 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // burger
-  window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#burger').addEventListener('click', function() {
-        document.querySelector('#menu').classList.toggle('is-active')
-    }) 
-  })
+  // window.addEventListener('DOMContentLoaded', function() {
+  //   document.querySelector('#burger').addEventListener('click', function() {
+  //       document.querySelector('#menu').classList.toggle('is-active')
+  //   }) 
+  // })
 
-  $(document).ready(function(){
-    $('#burger').click(function(){
-      $(this).toggleClass('open');
+  // $(document).ready(function(){
+  //   $('#burger').click(function(){
+  //     $(this).toggleClass('open');
+  //   });
+  // });
+  $(document).ready(function() {
+    $('.header__burger').click(function(event) {
+      $('.header__burger, .header__menu').toggleClass('active');
+      //$('body').toggleClass('lock');Блокируем прокрутку сайта, пока меню открыта. В css body.lock
     });
   });
 
