@@ -316,6 +316,7 @@ button {
 .burger {
   position: relative;
   display: none;
+  padding: 0;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -1581,8 +1582,8 @@ button {
   .burger {
     display: block;
     outline: none;
-    width: 22px;
-    height: 15.5px;
+    width: 17px;
+    height: 15px;
     cursor: pointer;    
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1597,7 +1598,7 @@ button {
   .burger span {
     display: block;
     position: absolute;
-    width: 11px;
+    width: 8.5px;
     height: 2px;    
     background-color: var(--color-tangaroa);
     opacity: 1;
@@ -1664,12 +1665,12 @@ button {
   }
 
   .burger.open {
-    width: 19px;
-    height: 19px;    
+    width: 17px;
+    height: 17px;    
   }
 
   .burger.open span {
-    width: 11.5px;
+    width: 7.5px;
   }
   
   .burger.open span:nth-child(1),.burger.open span:nth-child(6) {
@@ -1687,12 +1688,12 @@ button {
   }
   
   .burger.open span:nth-child(1) {
-    left: -1px;
+    left: 2px;
     top: 5px;
   }
   
   .burger.open span:nth-child(2) {
-    left: 7px;
+    left: 6px;
     top: 5px;
   }
   
@@ -1707,13 +1708,13 @@ button {
   }
   
   .burger.open span:nth-child(5) {
-    left: -1px;
-    top: 13px;
+    left: 2px;
+    top: 10px;
   }
   
   .burger.open span:nth-child(6) {
-    left: 7px;
-    top: 13px;
+    left: 6px;
+    top: 10px;
   }
 
   .header__center-list {
