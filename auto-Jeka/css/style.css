@@ -117,16 +117,26 @@ button {
 }
 
 .btn {
+  /*position: relative; Не ставить! Его(бургера меню) потом кнопка не видит.*/
   display: flex;
   align-items: center; 
+  padding: 2px 1px 1px 16px;
   outline: none;
   border: 1px solid var(--color-milanoRed);
   width: max-content;
+  height: max-content;
   font-weight: 700;
+  font-size: 12.5px;
+  line-height: 1;
   color: var(--color-white);
   background-color: var(--color-milanoRed);
   cursor: pointer;
   text-transform: uppercase;   
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -ms-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
 .wrapper {
@@ -595,33 +605,43 @@ button {
   color: var(--color-white);  
 }
 
-.header__bottom-link {  
-  /*position: relative;для меню burger*/ 
-  padding: 2px 2px 2px 16px;  
-  font-size: 12.5px;
-  line-height: 24px;
-  -webkit-transition: opacity .3s ease-in-out; 
-  -moz-transition: opacity .3s ease-in-out;
-  -ms-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out; 
+.header__center-basket {
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: fill .3s ease-in-out;
+  -moz-transition: fill .3s ease-in-out;
+  -ms-transition: fill .3s ease-in-out;
+  -o-transition: fill .3s ease-in-out;
+  transition: fill .3s ease-in-out;
 }
 
+.header__center-basket:focus svg path, .header__center-basket:hover svg path {
+  fill: var(--color-milanoRed);
+}
+
+.header__center-basket:active svg path {
+  opacity: .7;
+}
+
+/* .header__bottom-link {  
+  position: relative;для меню burger 
+} */
+
 .header__bottom-link:focus {
-  border: 1px solid var(--color-white);
+  outline: 1px solid var(--color-white);
 }
 
 .header__bottom-link:hover {
-  opacity: .9;
+  background-color: #d52828;
 }
 
 .header__bottom-link:active {
-  opacity: .8;
+  background-color: #d00c0c;
 }
 
-.header__bottom-block-svg {
+.header__bottom-link svg {
   margin-left: 5px;
-  height: 40px;
+  /* height: 40px; */
 }
 /*** // Шапка header-1440px***/
 
@@ -723,6 +743,12 @@ button {
   margin: 5px 0 20px;
 }
 
+.about__center-container iframe {
+  width: 100%;
+  height: 500px;
+  border: 1px solid transparent;
+}
+
 .about__bottom {
   padding: 99px 0 0;
   /* width: 100px;
@@ -806,7 +832,7 @@ button {
   text-align: center;
 }
 
-.about__bottom-button {
+/* .about__bottom-button {
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -820,23 +846,23 @@ button {
   -ms-transition: opacity .3s ease-in-out;
   -o-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
-}
+} */
 
 .about__bottom-button:focus {
-  border: 1px solid var(--color-white);
+  outline: 1px solid var(--color-tangaroa);
 }
 
 .about__bottom-button:hover {
-  opacity: .9;
+  background-color: #d52828;
 }
 
 .about__bottom-button:active {
-  opacity: .8;
+  background-color: #d00c0c;
 }
 
-.about__bottom-block-svg {
+.about__bottom-button svg {
   margin-left: 5px;
-  height: 40px;
+  /* height: 40px; */
 }
 /*** // О нас about-1440px***/
 
@@ -932,7 +958,7 @@ button {
   outline: 1px solid var(--color-dustyGray);
 }
 
-.recording__button {
+/* .recording__button {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -946,23 +972,23 @@ button {
   -moz-transition: bacground-color .4s ease-in-out;
   -o-transition: bacground-color .4s ease-in-out;
   transition: bacground-color .4s ease-in-out;
-}
+} */
 
 .recording__button:focus {
-  border: 1px solid var(--color-white);
+  outline: 1px solid var(--color-tangaroa);
 }
 
 .recording__button:hover {
-  opacity: .9;
+  background-color: #d52828;
 }
 
 .recording__button:active {
-  opacity: .8;
+  background-color: #d00c0c;
 }
 
-.recording__block-svg {
+.recording__button svg {
   margin-left: 5px;
-  height: 40px;
+  /* height: 40px; */
 }
 
 .recording__right {
@@ -1244,6 +1270,7 @@ button {
 }
 .conventus__block-conventus {
   display: flex;
+  justify-content: space-between;
   margin-top: -97px;
   padding: 45px 76px 45px 70px;
   background-color: var(--color-white);
@@ -1258,7 +1285,7 @@ button {
   color: var(--color-tangaroa);
 }
 
-.conventus__button {
+/* .conventus__button {
   display: flex;
   align-items: center;
   margin-top: 5px;
@@ -1273,11 +1300,23 @@ button {
   -moz-transition: bacground-color .4s ease-in-out;
   -o-transition: bacground-color .4s ease-in-out;
   transition: bacground-color .4s ease-in-out;
+} */
+
+.conventus__button:focus {
+  outline: 1px solid var(--color-tangaroa);
 }
 
-.conventus__block-svg {
+.conventus__button:hover {
+  background-color: #e90606;
+}
+
+.conventus__button:active {
+  background-color: #d00c0c;
+}
+
+.conventus__button svg {
   margin-left: 5px;
-  height: 40px;
+  /* height: 40px; */
 }
 /*** // Кнопка встречи conventus-1440px***/
 
@@ -1900,11 +1939,7 @@ button {
   .conventus__block-conventus {
     margin-top: -57px;
     padding: 35px;
-  }
-
-  .conventus__button {
-    padding-left: 15px;
-  }  
+  } 
   /*** Кнопка встречи conventus-1024px***/
 
   /*** Подвал footer-1024px***/
@@ -1976,14 +2011,6 @@ button {
     margin-bottom: 33px;
   }
 
-  .burger span:nth-child(3), .burger span:nth-child(4) {
-    top: 7px;
-  }
-
-  .burger span:nth-child(5), .burger span:nth-child(6) {
-    top: 12px;
-  } 
-
   .header__center-clonList_none1280 {
     display: flex;
   }
@@ -2014,12 +2041,6 @@ button {
     line-height: 40px;
   }
   
-  .header__bottom-link {
-    padding: 2px 2px 2px 13px;
-    font-size: 10px;
-    line-height: 15px;
-  }  
-
   /*** Фото whoweare-757px***/
   .whoweare {
     padding: 0 0 90px 0;
@@ -2210,20 +2231,19 @@ button {
     width: 100%;
   }
 
-  .conventus__button {
+  /* .conventus__button {
     position: relative;
     justify-content: center;
     padding: 10px 20px;
     width: 100%;    
-  }
+  } */
 
-  .conventus__block-svg {
+  /* .conventus__block-svg {
     position: absolute;
     right: 0;
     margin-left: 0;
     height: 40px;    
-  }
-
+  } */
   /*** // Кнопка встречи conventus-757px***/
 
   /*** Подвал footer-757px***/
@@ -2298,6 +2318,14 @@ button {
     padding: 2px 15px 0;
   }
 
+  .burger {
+    height: 14px; 
+  }
+
+  .burger span:nth-child(3), .burger span:nth-child(4) {
+    top: 6px;
+  }
+
   .header__center-clonList_none1280 {
     display: block;
   }
@@ -2319,31 +2347,7 @@ button {
     top: 6px;
     left: 108px;
     width: max-content;
-  }  
-
-  .burger {
-    padding: 0;
-    width: 22px;
-    height: 20px;
-  }  
-
-  .burger span:nth-child(1), .burger span:nth-child(2) {
-    top: 0px;
-  }
-
-  .burger span:nth-child(3), .burger span:nth-child(4) {
-    top: 6px;
-  }
-
-  .burger.open span:nth-child(5) {
-    left: 5px;
-    top: 8px;
-  }
-
-  .burger.open span:nth-child(6) {
-    left: 6px;
-    top: 8px;
-  }
+  } 
 
   .header__center-list {
     margin-left: -15px;
@@ -2357,6 +2361,14 @@ button {
     line-height: 37px;
   }
 
+  .header__bottom-link {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header__bottom-link svg {
+    margin-left: auto;
+  }
   /*** Фото whoweare-434px***/
   .whoweare {
     padding: 0 0 40px 0;
@@ -2405,8 +2417,7 @@ button {
   } 
 
   .about__bottom-button svg {
-    position: absolute;
-    right: 5px;    
+    margin-left: auto;   
   } 
 
   /*** Форма регистрация recording-434px***/
@@ -2440,6 +2451,15 @@ button {
   .recording__h4 {
     width: 156px;
     margin: 0 auto;
+  }
+
+  .recording__button {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .recording__button svg {
+    margin-left: auto;
   }
 
   /*** Картинка и ТАБ gallery-434px***/
@@ -2533,6 +2553,16 @@ button {
   .conventus__block-conventus {
     margin-top: 0;
   }
+
+  .conventus__button {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .conventus__button svg {
+    margin-left: auto;
+  }
+
   /*** // Кнопка встречи conventus-434px***/
 
   /*** Подвал footer-434px***/
