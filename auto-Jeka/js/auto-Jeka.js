@@ -235,6 +235,45 @@ myMap.geoObjects
 
 
 
+//кнопка для видео включатель/выключатель. зелённый круг
+let per = 0;
+$(document).ready(function(){
+  // $("#tasetupo-kedgaben").css("height", $(document).height()).hide(); Вытянит на всю высоту
+  // Клик на всю высоту
+	// $(document).click(function(e) {
+	// if(!$(e.target).hasClass('on-off') && per == 1) {
+	//   $(".included-off").toggle();
+	//   per = 0;
+	// }
+	// });
+
+  $(".gallery__span_on-off-1js").click(function(){
+    $(".gallery__off_1js").toggle();
+    per += 1;
+    if (per == 2) {
+    per = 0;
+    }
+   });
+
+  $(".gallery__span_on-off-2js").click(function(){
+    $(".gallery__off_2js").toggle();
+    per += 1;
+    if (per == 2) {
+      per = 0;
+    }
+  });
+  
+  $(".gallery__span_on-off-3js").click(function(){
+    $(".gallery__off_3js").toggle();
+    per += 1;
+    if (per == 2) {
+      per = 0;
+      }
+    });
+});  
+
+
+
   // Плавный скролл по якорям. В любое место можно кинуть.
   $(function(){
     $('a[href^="#"]').click(function(){

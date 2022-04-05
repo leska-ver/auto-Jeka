@@ -425,13 +425,19 @@
                 <button class="gallery__button js-tabs-btn" data-path="gallery" aria-label="gallery">Gallery</button>
               </li>
               <li class="gallery__item">
-                <button class="gallery__button gallery__button_green js-tabs-btn is-active" data-path="bay-1" aria-label="bay-1">Live stream: Bay 1</button>
+                <div class="gallery__on"></div><!--Зелённый-->
+                <div class="gallery__off gallery__off_1js"></div><!--Серый-->
+                <button class="gallery__button js-tabs-btn is-active" data-path="bay-1" aria-label="bay-1">Live stream: Bay 1</button>
               </li>
               <li class="gallery__item">
-                <button class="gallery__button gallery__button_green js-tabs-btn" data-path="bay-2" aria-label="bay-2">Live stream: Bay 2</button>
+                <div class="gallery__on"></div><!--Зелённый-->
+                <div class="gallery__off gallery__off_2js"></div><!--Серый-->
+                <button class="gallery__button js-tabs-btn" data-path="bay-2" aria-label="bay-2">Live stream: Bay 2</button>
               </li>
               <li class="gallery__item">
-                <button class="gallery__button gallery__button_gray js-tabs-btn" data-path="bay-3" aria-label="bay-3">Live stream: Bay 3</button>
+                <div class="gallery__on"></div><!--Зелённый-->
+                <div class="gallery__off gallery__off_3js"></div><!--Серый-->
+                <button class="gallery__button js-tabs-btn" data-path="bay-3" aria-label="bay-3">Live stream: Bay 3</button>
               </li>
             </ul>
             <div class="gallery__bay gallery__bay_padding tab-content" data-target="gallery">
@@ -450,17 +456,19 @@
               <button class="gallery__button-hide" id="list-button-js">Ещё...</button>
             </div>
             <div class="gallery__bay tab-content tab-content-active" data-target="bay-1">
-              <img class="gallery__bay-imgWidth" src="img/gallery-7.jpg" alt="Фото-7">
-              <span class="gallery__span">Live</span>
+              <img class="gallery__bay-imgWidth" src="img/gallery-7.jpg" alt="Фото-7">              
+              <span class="gallery__span gallery__span_on-off-1js">Live</span>
             </div>
-            <div class="gallery__bay tab-content" data-target="bay-2">
-              <img class="gallery__bay-imgWidth" src="img/gallery-8.jpg" alt="Фото-8">
-              <span class="gallery__span">Live</span>
+            <div class="gallery__bay gallery__bay_video tab-content" data-target="bay-2">
+              <!-- <img class="gallery__bay-imgWidth" src="img/gallery-8.jpg" alt="Фото-8"> -->
+              <iframe src="https://www.youtube.com/embed/rBMhcszHxsc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <span class="gallery__span gallery__span_on-off-2js">Live</span>
             </div>
-            <div class="gallery__bay tab-content" data-target="bay-3">
-              <img class="gallery__bay-imgWidth" src="img/gallery-9.jpg" alt="Фото-9">
-              <span class="gallery__span">Live</span>
-            </div>
+            <div class="gallery__bay gallery__bay_video tab-content" data-target="bay-3">
+              <!-- <img class="gallery__bay-imgWidth" src="img/gallery-9.jpg" alt="Фото-9"> -->
+              <iframe src="https://www.youtube.com/embed/uOKgYcN__HY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <span class="gallery__span gallery__span_on-off-3js">Live</span>
+            </div>            
           </div>
         </div>
       </section>
@@ -563,7 +571,7 @@
             </button>
           </div>
         </div>
-      </section>     
+      </section>  
     </main>
     <footer class="footer">
       <div class="footer__top">
@@ -724,6 +732,8 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Подключите API - Яндекс карта(ymap) -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <!--Кнопка для видео включатель/выключатель. зелённый круг-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <!-- Мои -->
   <script src="js/auto-Jeka.js"></script>
