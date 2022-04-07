@@ -623,10 +623,6 @@ button {
   opacity: .7;
 }
 
-/* .header__bottom-link {  
-  position: relative;для меню burger 
-} */
-
 .header__bottom-link:focus {
   outline: 1px solid var(--color-white);
 }
@@ -641,7 +637,6 @@ button {
 
 .header__bottom-link svg {
   margin-left: 5px;
-  /* height: 40px; */
 }
 /*** // Шапка header-1440px***/
 
@@ -751,11 +746,6 @@ button {
 
 .about__bottom {
   padding: 99px 0 0;
-  /* width: 100px;
-  height: 100px;
-  background-image: url("../img/picture-transparent-1.png");
-  background-size: cover;
-  background-repeat: no-repeat;   */
 }
 
 .about__bottom-list {
@@ -832,22 +822,6 @@ button {
   text-align: center;
 }
 
-/* .about__bottom-button {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  padding: 2px 2px 2px 16px;
-  width: max-content;
-  font-weight: 700;
-  font-size: 12.5px;
-  line-height: 22px;
-  -webkit-transition: opacity .3s ease-in-out;
-  -moz-transition: opacity .3s ease-in-out;
-  -ms-transition: opacity .3s ease-in-out;
-  -o-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
-} */
-
 .about__bottom-button:focus {
   outline: 1px solid var(--color-tangaroa);
 }
@@ -862,7 +836,6 @@ button {
 
 .about__bottom-button svg {
   margin-left: 5px;
-  /* height: 40px; */
 }
 /*** // О нас about-1440px***/
 
@@ -958,22 +931,6 @@ button {
   outline: 1px solid var(--color-dustyGray);
 }
 
-/* .recording__button {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 2px 2px 2px 16px;  
-  width: max-content;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;  
-  -webkit-transition: bacground-color .4s ease-in-out;
-  -ms-transition: bacground-color .4s ease-in-out;
-  -moz-transition: bacground-color .4s ease-in-out;
-  -o-transition: bacground-color .4s ease-in-out;
-  transition: bacground-color .4s ease-in-out;
-} */
-
 .recording__button:focus {
   outline: 1px solid var(--color-tangaroa);
 }
@@ -988,7 +945,6 @@ button {
 
 .recording__button svg {
   margin-left: 5px;
-  /* height: 40px; */
 }
 
 .recording__right {
@@ -1308,23 +1264,6 @@ button {
   color: var(--color-tangaroa);
 }
 
-/* .conventus__button {
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
-  margin-left: auto;
-  padding: 3px 2px 3px 21px;
-  height: max-content;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  -webkit-transition: bacground-color .4s ease-in-out;
-  -ms-transition: bacground-color .4s ease-in-out;
-  -moz-transition: bacground-color .4s ease-in-out;
-  -o-transition: bacground-color .4s ease-in-out;
-  transition: bacground-color .4s ease-in-out;
-} */
-
 .conventus__button:focus {
   outline: 1px solid var(--color-tangaroa);
 }
@@ -1339,16 +1278,8 @@ button {
 
 .conventus__button svg {
   margin-left: 5px;
-  /* height: 40px; */
 }
 /*** // Кнопка встречи conventus-1440px***/
-
-
-
-
-
-
-
 
 
 /*** Подвал footer-1440px***/
@@ -1654,30 +1585,8 @@ button {
   font-size: 16px;
   text-align: center;
 }
-
-
 /* // Стили для Часов */
-
-
-
-
-
-
-
 /*** // Подвал footer-1440px***/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 1024px) {
@@ -1870,11 +1779,13 @@ button {
     width: 100%;
   }
 
+
   /***Фото whoweare-1024px***/
   .whoweare__container {
     padding-top: 70px;
   }
   /*** // Фото whoweare-1024px***/
+
 
   /*** О нас about-1024px***/
   .about {
@@ -1907,10 +1818,9 @@ button {
 
   .about__bottom-item:nth-child(3n) {
     margin-right: 20px;
-  }
-
-  
+  }  
   /*** // О нас about-1024px***/
+
 
   /*** Форма регистрация recording-1024px***/
   .recording {
@@ -1933,6 +1843,7 @@ button {
     padding: 0 30px;
   } 
   /*** // Форма регистрация recording-1024px***/
+
 
   /*** Картинка и ТАБ gallery-1024px***/
   .gallery {
@@ -1978,6 +1889,7 @@ button {
   }
   /*** // Картинка и ТАБ gallery-1024px***/
 
+
   /*** Отзывы клиентов feedback-1024px***/
   .feedback {
     padding: 100px 0;
@@ -1988,6 +1900,7 @@ button {
     gap: 15px;
   }
   /*** // Отзывы клиентов feedback-1024px***/
+
 
   /*** Услуги services-1024px***/
   .services {
@@ -2020,6 +1933,7 @@ button {
   }
   /*** // Услуги services-1024px***/
 
+
   /*** Кнопка встречи conventus-1024px***/
   .conventus {
     padding: 20px 0;
@@ -2030,6 +1944,7 @@ button {
     padding: 35px;
   } 
   /*** Кнопка встречи conventus-1024px***/
+
 
   /*** Подвал footer-1024px***/
   .footer {
@@ -2068,6 +1983,7 @@ button {
   }
   /*** // Подвал footer-1024px***/
 }
+
 
 @media (max-width: 757px) {
   .container {
@@ -2129,6 +2045,7 @@ button {
     font-size: 36px;
     line-height: 40px;
   }
+
   
   /*** Фото whoweare-757px***/
   .whoweare {
@@ -2160,6 +2077,7 @@ button {
   .whoweare__image {
     margin: 0 0 -60px 0;
   }
+
 
   /*** О нас about-757px***/
   .about {
@@ -2203,6 +2121,7 @@ button {
     width: 100%;
   }  
 
+
   /*** Форма регистрация recording-757px***/
   .recording {
     padding-bottom: 80px;
@@ -2239,6 +2158,7 @@ button {
     padding: 0 20px;
   }
 
+
   /*** Картинка и ТАБ gallery-757px***/
   .gallery {
     padding: 40px 0 0;
@@ -2272,6 +2192,7 @@ button {
   }
   /*** // Картинка и ТАБ gallery-757px***/
 
+
   /*** Отзывы клиентов feedback-757px***/
   .feedback {
     padding: 105px 0 50px 0;
@@ -2283,6 +2204,7 @@ button {
     margin: 0 auto;
   }
   /*** // Отзывы клиентов feedback-757px***/
+
   
   /*** Услуги services-757px***/
   .services {
@@ -2308,6 +2230,7 @@ button {
   }
   /*** // Услуги services-757px***/
 
+
   /*** Кнопка встречи conventus-757px***/
   .conventus__block-conventus {
     display: block;
@@ -2319,21 +2242,8 @@ button {
     margin-bottom: 30px;
     width: 100%;
   }
-
-  /* .conventus__button {
-    position: relative;
-    justify-content: center;
-    padding: 10px 20px;
-    width: 100%;    
-  } */
-
-  /* .conventus__block-svg {
-    position: absolute;
-    right: 0;
-    margin-left: 0;
-    height: 40px;    
-  } */
   /*** // Кнопка встречи conventus-757px***/
+
 
   /*** Подвал footer-757px***/
   .footer {
@@ -2390,9 +2300,8 @@ button {
     height: 260px;
   }
   /*** // Подвал footer-757px***/
-
-
 }  
+
 
 @media (max-width: 434px) {
   .container {
@@ -2458,6 +2367,8 @@ button {
   .header__bottom-link svg {
     margin-left: auto;
   }
+
+
   /*** Фото whoweare-434px***/
   .whoweare {
     padding: 0 0 40px 0;
@@ -2474,6 +2385,7 @@ button {
   .whoweare__image {
     margin: 0 0 -30px 0;
   }
+
 
   /*** О нас about-434px***/
   .about {
@@ -2508,6 +2420,7 @@ button {
   .about__bottom-button svg {
     margin-left: auto;   
   } 
+
 
   /*** Форма регистрация recording-434px***/
   .recording {
@@ -2551,6 +2464,7 @@ button {
     margin-left: auto;
   }
 
+
   /*** Картинка и ТАБ gallery-434px***/
   .gallery {
     padding: 40px 0 0;
@@ -2589,6 +2503,7 @@ button {
   /* // Скрываем часть услуг*/
   /*** // Картинка и ТАБ gallery-434px***/
 
+
   /*** Отзывы клиентов feedback-434px***/
   .feedback {
     padding: 95px 0 50px 0;
@@ -2615,6 +2530,7 @@ button {
   }
   /*** // Отзывы клиентов feedback-434px***/
 
+
   /*** Услуги services-434px***/
   .services {
     padding: 30px 0;
@@ -2638,6 +2554,7 @@ button {
   }
   /*** // Услуги services-434px***/
 
+
   /*** Кнопка встречи conventus-434px***/
   .conventus__block-conventus {
     margin-top: 0;
@@ -2651,9 +2568,9 @@ button {
   .conventus__button svg {
     margin-left: auto;
   }
-
   /*** // Кнопка встречи conventus-434px***/
 
+  
   /*** Подвал footer-434px***/
   .footer {
     padding: 15px 0 0;
