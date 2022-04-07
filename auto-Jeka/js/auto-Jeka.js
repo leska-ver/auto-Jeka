@@ -51,6 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+  
+
+
+
   //--inputmask - Телефон--//
   const form = document.querySelector('.form');
   const telSelector = form.querySelector('input[type="tel"]');
