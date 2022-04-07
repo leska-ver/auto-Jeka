@@ -1157,9 +1157,20 @@ button {
   right: 32px;
   padding: 1.5px 9px;
   border: 1px solid var(--color-malachite);
-  background-color: var(--color-malachite);
   color: var(--color-white);
+  background-color: var(--color-malachite);  
+  transition: .5s;
   cursor: pointer;
+}
+
+.gallery__span:hover {
+  -webkit-transform: scale(1.2);
+  -ms-ransform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.gallery__span:active {
+  border: 1px solid var(--color-tangaroa);
 }
 
 .gallery__button-hide {
@@ -1584,6 +1595,10 @@ button {
   fill: #444;
   cursor: pointer;
 }
+
+.footer__modal_width {
+  width: 450px;
+}
 /* // Стили для модального окна - footer__modal */
 
 .footer__modal-title {
@@ -1594,6 +1609,61 @@ button {
   width: 100%; 
   height: 400px;
 }
+
+.footer__modal-title_weight {
+  margin-top: 25px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+/* Стили для Часов */
+.footer__modal-clock {
+  display: grid;
+  grid-template-columns: 32px 15px 32px;
+  gap: 1px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 82px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.footer__modal-block-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0 auto;
+  margin-bottom: 2px;  
+  width: 162px;  
+}
+
+.footer__modal-date {
+  display: inline-block;
+  width: 25px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer__modal-month, .footer__modal-weekly {
+  font-size: 18px;
+}
+
+.footer__modal-yrar {
+  margin: 0 auto;
+  padding: 2px;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* // Стили для Часов */
+
+
+
+
+
+
+
 /*** // Подвал footer-1440px***/
 
 
@@ -2615,6 +2685,16 @@ button {
 
   .footer__modal {
     width: 100%;     
+  }
+
+  .footer__modal-clock {
+    font-size: 22px;
+  }
+
+  .footer__modal-title_weight {
+    margin: 25px auto;
+    padding: 2px;
+    width: 70%;    
   }
   /*** // Подвал footer-434px***/
 }

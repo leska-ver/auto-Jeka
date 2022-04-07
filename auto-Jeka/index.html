@@ -696,10 +696,28 @@
               <p class="footer__modal-title">Карта</p>
               <div class="footer__map" id="map"></div>
             </div>
-            <div class="footer__modal" data-modal="2">
+            <div class="footer__modal footer__modal_width" data-modal="2">
               <!--   Svg иконка для закрытия окна  -->
-              <svg class="footer__modal-cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-              <p class="footer__modal-title">Заголовок окна 2</p>
+              <svg class="footer__modal-cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>              
+              <div class="footer__modal-block-watch">
+                <!--Выводим текущее время-->
+                <div class="footer__modal-clock" id="clock">
+                  <!--Часы-->
+                  <div class="footer__modal-hours" id="hours"></div>
+                  <div class="footer__modal-mig" id="mig">:</div>
+                  <div class="footer__modal-minutes" id="minutes"></div>
+                </div>
+                <p class="footer__modal-title footer__modal-title_weight desc-p">Пн - Сб: 7:00 утра - 6:00 вечера</p>
+                <div class="footer__modal-block-grid">
+                  <div class="footer__modal-date" id="date"></div>
+                  <!-- <div class="footer__modal-block-wekly"> -->
+                    <div class="footer__modal-month" id="month"></div>
+                    /
+                    <div class="footer__modal-weekly" id="weekly"></div>
+                  <!-- </div> -->
+                </div>
+                <div class="footer__modal-yrar" id="year"></div>
+              </div>
             </div>
             <!-- Подложка под модальным окном -->
             <div class="footer__overlay js-overlay-modal"></div>
@@ -734,6 +752,9 @@
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <!--Кнопка для видео включатель/выключатель. зелённый круг-->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Плагин для часов -->
+  <script>digitalClock();</script>
+
 
   <!-- Мои -->
   <script src="js/auto-Jeka.js"></script>
