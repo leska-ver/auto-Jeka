@@ -1886,6 +1886,7 @@ button {
 
   /***Фото whoweare-1024px***/
   .whoweare__container {
+    margin-top: 0;/*Для subМеню*/
     padding-top: 70px;
   }
 
