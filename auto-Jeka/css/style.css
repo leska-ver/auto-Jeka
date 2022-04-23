@@ -1888,6 +1888,7 @@ button {
   .whoweare__container {
     margin-top: 0;/*Для subМеню*/
     padding-top: 70px;
+    z-index: -1;/*Для subМеню*/
   }
 
   .whoweare__container::before {
