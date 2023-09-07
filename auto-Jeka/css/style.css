@@ -1350,22 +1350,6 @@ button {
   line-height: 29px;
   color: var(--color-tangaroa);
 }
-
-.conventus__button:focus {
-  outline: 1px solid var(--color-tangaroa);
-}
-
-.conventus__button:hover {
-  background-color: #e90606;
-}
-
-.conventus__button:active {
-  background-color: #d00c0c;
-}
-
-.conventus__button svg {
-  margin-left: 5px;
-}
 /*** // Кнопка встречи conventus-1440px***/
 
 
