@@ -118,18 +118,17 @@ button {
 
 .btn {
   /*position: relative; Не ставить! Его(бургера меню) потом кнопка не видит.*/
-  display: flex;
   align-items: center; 
-  padding: 2px 1px 1px 16px;
   outline: none;
+  padding: 15px 45px 15px 20px;
   border: 1px solid var(--color-milanoRed);
   width: max-content;
-  height: max-content;
   font-weight: 700;
   font-size: 12.5px;
   line-height: 1;
+  text-transform: uppercase;
   color: var(--color-white);
-  background-color: var(--color-milanoRed);
+  background: var(--color-milanoRed) url("../img/arrow.svg") right no-repeat;
   cursor: pointer;
   text-transform: uppercase;   
   -webkit-transition: background-color .3s ease-in-out;
@@ -137,6 +136,18 @@ button {
   -ms-transition: background-color .3s ease-in-out;
   -o-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
+}
+
+.btn:focus {
+  outline: 1px solid var(--color-tangaroa);
+}
+
+.btn:hover {
+  background-color: #d52828;
+}
+
+.btn:active {
+  background-color: #d00c0c;
 }
 
 .wrapper {
@@ -219,6 +230,7 @@ button {
 .header__container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__top-logo {
@@ -282,9 +294,6 @@ button {
 }
 
 .header__top-link, .header__center-clonLink {
-  padding: 0 0 0 17px;
-  font-size: 12.5px;
-  line-height: 24px;
   -webkit-transition: opacity .3s ease-in-out; 
   -moz-transition: opacity .3s ease-in-out;
   -ms-transition: opacity .3s ease-in-out;
@@ -596,6 +605,12 @@ button {
   z-index: 1;
 }
 
+.header__bottom-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .header__bottom-title {
   margin-bottom: 49px;
   padding-top: 103px;
@@ -859,30 +874,16 @@ button {
 }
 
 .about__bottom-button {
+  display: block;
   margin: 0 auto;
-}
-
-.about__bottom-button:focus {
-  outline: 1px solid var(--color-tangaroa);
-}
-
-.about__bottom-button:hover {
-  background-color: #d52828;
-}
-
-.about__bottom-button:active {
-  background-color: #d00c0c;
-}
-
-.about__bottom-button svg {
-  margin-left: 5px;
+  width: 145px;
 }
 /*** // О нас about-1440px***/
 
 /*** Форма регистрация recording-1440px***/
 .recording {
   position: relative;
-  padding-bottom: 209px;
+  padding-bottom: 212px;
   background-color: var(--color-tangaroa);
 }
 
@@ -998,22 +999,8 @@ button {
 
 .recording__button {
   margin-left: auto;
-}
-
-.recording__button:focus {
-  outline: 1px solid var(--color-tangaroa);
-}
-
-.recording__button:hover {
-  background-color: #d52828;
-}
-
-.recording__button:active {
-  background-color: #d00c0c;
-}
-
-.recording__button svg {
-  margin-left: 5px;
+  padding-left: 15px;
+  width: 206px;
 }
 
 .recording__right {
