@@ -17,3 +17,13 @@ require 'phpmailer/Exception.php';
 2. Создала файл mail.php, она для отправке писем. 
 Подключаем // Файл PHPMailer
 require_once 'PHPMailer/PHPMailerAutoload.php';
+
+/*Жека исправил*/
+/*26:46 Кнопка и свг. 9 урок*/
+.block__button {/*.btn*/
+  padding: 17px 50px 17px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #c40b0b url("../img/button.png") right no-repeat;
+}
