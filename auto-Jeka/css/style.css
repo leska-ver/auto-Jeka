@@ -2621,10 +2621,6 @@ button {
     width: 100%;
   }
 
-  .recording__button svg {
-    margin-left: auto;
-  }
-
 
   /*** Картинка и ТАБ gallery-434px***/
   .gallery {
@@ -2731,10 +2727,6 @@ button {
   .conventus__button {
     justify-content: center;
     width: 100%;
-  }
-
-  .conventus__button svg {
-    margin-left: auto;
   }
   /*** // Кнопка встречи conventus-434px***/
 
