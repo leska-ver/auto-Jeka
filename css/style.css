@@ -248,6 +248,7 @@ button {
 }
 
 .header__top-logo:focus {
+  width: max-content;
   outline: 2px solid var(--color-white);
   outline-offset: 8px;
 }
@@ -1395,8 +1396,7 @@ button {
 }
 
 .footer__logo:focus {
-  outline: 2px solid var(--color-tangaroa);
-  outline-offset: 8px;
+  opacity: .7;
 }
 
 .footer__desc {
